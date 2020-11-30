@@ -1,0 +1,22 @@
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+    color: white;
+}
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 15px;
+    font-family:  'Tangerine', serif;
+    color: blue;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1586685780188-df2b1f94ba42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyMXxibzhqUUtUYUUwWXx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+
+}
