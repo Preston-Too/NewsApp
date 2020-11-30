@@ -36,3 +36,27 @@ def get_news_category(category):
 
 
 
+def process_results(news_list):
+    
+    '''
+    This function processes the results and transforms them to become into a list of objects
+    
+    Args:
+        news_list: A list of dictionaries that contains the news details
+    Returns :
+        news_results: A list of news objects
+    '''
+
+    news_results = []
+
+    for news_item in news_list:
+        id = news_item.get('id')
+        name = news_item.get('name')
+        description = news_item.get('description')
+        category = news_item.get('category')
+        url = news_item.get('url')
+
+        source_object = Sources(id, name, description, category, url)
+        news_results.append(source_object)
+
+    return news_results
