@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/articles.css')}}">
+{% endblock %}
+<!-- Content block -->
+
+
+<!-- Content block -->
+{% block content %}
+<div class="jumbotron hjumbo">
+    <div class="overlay">
+        <h1 class="text-dark txt text-center text-bold">TOP HEADLINES</h1>
+    </div>
+</div>
+<h2> General News</h2>
+<div class="display">
+    {{ macro.displayNewsList(general)}}
+</div>
+</div>
+<h2> Entertainment News</h2>
+<div class="display">
+    {{ macro.displayNewsList(entertainment)}}
+</div>
+<h2> Technology News</h2>
+<div class="display">
+    {{ macro.displayNewsList(technology)}}
+</div>
+<h2> Business News</h2>
+<div class="display">
+    {{ macro.displayNewsList(business)}}
+</div>
+<h2> Health News</h2>
+<div class="display">
+    {{ macro.displayNewsList(health)}}
+</div>
+<h2> Science News</h2>
+<div class="display">
+    {{ macro.displayNewsList(science)}}
+</div>
+</div>
+<h2> Sports News</h2>
+<div class="display">
+    {{ macro.displayNewsList(sports)}}
+</div>
+{% endblock%}
+  
