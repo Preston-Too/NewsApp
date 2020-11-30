@@ -6,8 +6,8 @@
 {% macro displayNewsList(news_list) %}
 {% for news in news_list %}
 
-<div class="col-md-4">
-   
+<div class="col-md-4"
+style="box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8); margin-top: 10px; font-family: Roboto, 'Helvetica Neue', sans-serif; margin: 10px; background-color: black;">
     <h3 class="text-center">{{news.name}}</h3>
     <h4 class="text-center">{{news.description}}</h4>
     <a href="/sources/{{news.id}}" class="btn btn-primary text-center">Go to {{news.name}}</a>
